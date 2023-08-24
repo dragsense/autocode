@@ -1,0 +1,757 @@
+{
+  "layouts": [
+    {
+      "tag": "header",
+      "html-bk": "<svg viewBox=\"0 0 800 600\" width=\"100%\" height=\"100%\">\n  <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <!--Hero text-->\n  <text x=\"400\" y=\"250\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Header</text>\n\n  <!--Hero paragraph-->\n  <text x=\"400\" y=\"300\" fill=\"#cccc\" font-size=\"24\" text-anchor=\"middle\">\n    Lorem ipsum dolor sit amet,\n  </text>\n\n  <!--Button-->\n  <rect x=\"320\" y=\"400\" width=\"150\" height=\"50\" rx=\"25\" fill=\"#cccc\"/>\n  <text x=\"395\" y=\"432\" fill=\"#ccc\" font-size=\"24\" text-anchor=\"middle\">Learn More</text>\n  \n  <!--Slider arrows-->\n  <g transform=\"translate(700, 300)\"  style=\"display: flex; justify-content: space-between; width: 100%;\">\n        <polygon points=\"10,0 20,10 10,20\" fill=\"#cccc\"/>\n  </g>\n\n  <g transform=\"translate(0, 300)\"  style=\"display: flex; justify-content: space-between; width: 100%;\">\n    <polygon points=\"90,0 80,10 90,20\" fill=\"#cccc\"/>\n  </g>\n</svg>",
+      "type": "layouts",
+      "layout": "header",
+      "notaccept": [
+        "main",
+        "header"
+      ]
+    },
+    {
+      "tag": "nav",
+      "type": "layouts",
+      "layout": "nav",
+      "notaccept": [
+        "main",
+        "nav",
+        "header"
+      ]
+    },
+    {
+      "tag": "aside",
+      "type": "layouts",
+      "layout": "aside",
+      "notaccept": [
+        "main",
+        "header",
+        "nav",
+        "footer",
+        "section",
+        "aside"
+      ]
+    },
+    {
+      "tag": "main",
+
+      "html-bk": "<svg viewBox=\"0 0 800 600\" width=\"100%\" height=\"100%\">\n  <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <!-- Header -->\n  <rect x=\"0\" y=\"0\" width=\"100%\" height=\"50\" fill=\"#333\" />\n  <text x=\"400\" y=\"35\" fill=\"#cccc\" font-size=\"24\" text-anchor=\"middle\">Header</text>\n\n  <!-- Left Sidebar -->\n  <rect x=\"0\" y=\"50\" width=\"50\" height=\"500\" fill=\"#333\" />\n\n  <!-- Main area -->\n  <rect x=\"50\" y=\"50\" width=\"700\" height=\"500\" fill=\"#333\" />\n  <text x=\"400\" y=\"300\" fill=\"#eee\" font-size=\"72\" text-anchor=\"middle\">Main</text>\n\n  <!-- Right Sidebar -->\n  <rect x=\"750\" y=\"50\" width=\"50\" height=\"500\" fill=\"#333\" />\n\n  <!-- Footer -->\n  <rect x=\"0\" y=\"550\" width=\"100%\" height=\"50\" fill=\"#333\" />\n  <text x=\"400\" y=\"585\" fill=\"#cccc\" font-size=\"24\" text-anchor=\"middle\">Footer</text>\n</svg>",
+      "type": "layouts",
+      "layout": "main",
+      "notaccept": [
+        "header",
+        "main",
+        "nav",
+        "footer"
+      ]
+    },
+    {
+      "tag": "section",
+      "html-bk": "<svg viewBox=\"0 0 800 600\" width=\"100%\" height=\"100%\">\n    <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n <!-- Section -->\n  <rect x=\"50\" y=\"100\" width=\"700\" height=\"400\" stroke=\"#fff\" stroke-dasharray=\"5 5\" fill=\"none\" />\n  <text x=\"400\" y=\"320\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Section</text>\n\n</svg>",
+      "type": "layouts",
+      "layout": "section",
+      "notaccept": [
+        "main",
+        "header",
+        "nav",
+        "footer",
+        "section"
+      ]
+    },
+    {
+      "tag": "div",
+      "html-bk": "<svg viewBox=\"0 0 800 300\" width=\"100%\" height=\"100%\">\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <rect x=\"150\" y=\"50\" width=\"500\" height=\"200\" stroke=\"#fff\" stroke-dasharray=\"5 5\" fill=\"none\" />\n  <text x=\"400\" y=\"170\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Div</text>\n</svg>",
+      "type": "layouts",
+      "layout": "div",
+      "notaccept": []
+    },
+    {
+      "tag": "article",
+      "type": "layouts",
+      "layout": "article",
+      "notaccept": [
+        "main",
+        "header",
+        "nav",
+        "footer",
+        "section"
+      ]
+    },
+    {
+      "tag": "hr",
+
+      "html-bk": "<svg viewBox=\"0 0 800 200\" width=\"100%\" height=\"100%\">\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  \n  <text x=\"400\" y=\"100\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Hr</text>\n  \n  <!-- Line separator -->\n  <line x1=\"100\" y1=\"150\" x2=\"700\" y2=\"150\" stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\" />\n</svg>",
+      "type": "layouts",
+      "layout": "hr",
+      "notaccept": []
+    },
+ 
+    {
+      "tag": "footer",
+      "type": "layout",
+      "layout": "footer",
+
+      "notaccept": [
+        "main",
+        "header",
+        "nav",
+        "footer"
+      ],
+      "html-bk": "<svg viewBox='0 0 800 300' width='100%' height='100%'>\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n \n  <!-- Left Section -->\n  <g transform='translate(50, 40)'>\n    <text x='0' y='0' fill='#ccc' font-size='24'>Address:</text>\n    <text x='0' y='30' fill='#ccc' font-size='16'>123 Main St.</text>\n    <text x='0' y='50' fill='#ccc' font-size='16'>Suite 101</text>\n    <text x='0' y='100' fill='#ccc' font-size='16'>Phone: (123) 456-7890</text>\n    <text x='0' y='120' fill='#ccc' font-size='16'>Email: info@example.com</text>\n  </g>\n  \n  <!-- Center Section -->\n  <g transform='translate(300, 130)'>\n    <text x='0' y='0' fill='#fff' font-size='72'>Footer</text>\n  </g>\n  \n  <!-- Right Section -->\n  <g transform='translate(600, 50)'>\n    <text x='0' y='0' fill='#ccc' font-size='24'>Follow Us:</text>\n    <g transform='translate(0, 30)'>\n      <circle cx='10' cy='10' r='10' fill='#1877f2' />\n      <text x='25' y='15' fill='#ccc' font-size='16'>Facebook</text>\n    </g>\n    <g transform='translate(0, 60)'>\n      <circle cx='10' cy='10' r='10' fill='#1da1f2' />\n      <text x='25' y='15' fill='#ccc' font-size='16'>Twitter</text>\n    </g>\n    <g transform='translate(0, 90)'>\n      <circle cx='10' cy='10' r='10' fill='#e1306c' />\n      <text x='25' y='15' fill='#ccc' font-size='16'>Instagram</text>\n    </g>\n  </g>\n  <line x1='50' y1='230' x2='750' y2='230' stroke='#ccc' stroke-width='2' stroke-linecap='round' />\n\n    <text x='420' y='260' fill='#ccc' font-size='12' text-anchor='middle'>Copyright © 2023 MyCompany</text>\n\n</svg>"
+    }
+  ],
+  "texts": [
+    {
+      "tag": "h1",
+      "html": "<h1> This is Heading 1 </h1>",
+      "text": "This is Heading 1",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "h2",
+      "html": "<h2> This is Heading 2 </h2>",
+      "text": "This is Heading 2",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "h3",
+      "html": "<h3> This is Heading 3 </h3>",
+      "text": "This is Heading 3",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "h4",
+      "html": "<h4> This is Heading 4 </h3>",
+      "text": "This is Heading 4",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "h5",
+      "html": "<h5> This is Heading 5 </h3>",
+      "text": "This is Heading 5",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "h6",
+      "html": "<h6> This is Heading 6 </h6>",
+      "text": "This is Heading 6",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "p",
+      "type": "texts",
+      "layout": "text",
+      "notaccept": [
+        "p",
+        "layouts"
+      ],
+      "text": "This is Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "html": "<p> This is Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>"
+    },
+    {
+      "tag": "a",
+      "type": "texts",
+      "text": "Link",
+      "layout": "link",
+      "html": "<a style='color: #1890ff;' href='#'> This is a link. </a>",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "div",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "ul",
+      "type": "texts",
+      "layout": "list",
+      "html": "<ul style='list-style: square !important;padding-left: 20px;'>  <li style='list-style: square;'>This is Unodered List.  </li><li style='list-style: square;'> This is Unodered List. </li></ul>",
+      "notaccept": [
+        "main",
+        "section",
+        "table",
+        "header",
+        "nav",
+        "footer",
+        "media",
+        "inputs"
+      ]
+    },
+    {
+      "tag": "ol",
+      "type": "texts",
+      "layout": "list",
+      "html": "<ol style='list-style: decimal !important;padding-left: 20px;'> <li>This is Ordered List.  </li><li>This is Ordered List. </li></ol>",
+      "notaccept": [
+        "main",
+        "section",
+        "table",
+        "header",
+        "nav",
+        "footer",
+        "media",
+        "inputs"
+      ]
+    },
+    {
+      "tag": "span",
+      "type": "texts",
+      "layout": "text",
+      "text": "Some text goes here...",
+      "html": "<span> This is Span. </span>",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "label",
+      "type": "texts",
+      "layout": "text",
+      "text": "Label",
+      "html": "<label> This is Label. </label>",
+      "notaccept": [
+        "layouts",
+        "media",
+        "ul",
+        "ol",
+        "li"
+      ]
+    },
+    {
+      "tag": "blockquote",
+      "type": "texts",
+      "layout": "text",
+      "text": "The only way to do great work is to love what you do. - Steve Jobs",
+      "html": "<blockquote> This is Blockquote. </blockquote>",
+      "notaccept": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "layouts",
+        "ul",
+        "ol",
+        "li"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "type": "media",
+      "tag": "img",
+      "layout": "img",
+      "html": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <g transform=\"translate(170, 100)\">\n<path d=\"m43.638 17.575 -8.725 17.45 -5.813 -5.813 -5.813 5.813 -5.813 -5.813 -5.838 17.462h40.725l-8.725 -29.1zM0 0.125v64h64V0.125H0zm58.188 52.362h-52.375V5.938h52.362v46.55zM17.45 23.4c3.212 0 5.813 -2.612 5.813 -5.813 0 -3.212 -2.612 -5.813 -5.813 -5.813S11.637 14.375 11.637 17.575c0 3.212 2.6 5.825 5.813 5.825z\" fill=\"#fff\"/>\n    </g>\n\n    <text x=\"200\" y=\"200\" fill=\"#fff\" font-size=\"36\" text-anchor=\"middle\" alignment-baseline=\"middle\"> Image</text>\n\n  </svg>",
+      "notaccept": [
+        "texts",
+        "inputs",
+        "layouts"
+      ]
+    },
+    {
+      "type": "media",
+      "tag": "video",
+      "layout": "video",
+      "html": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <g transform=\"translate(170, 110)\">\n<path d=\"M33 57q-6.625 0 -12.5 -3.375 -5.75 -3.375 -9.125 -9.125T8 32q0 -6.75 3.375 -12.5t9.125 -9.125q5.75 -3.375 12.5 -3.375t12.5 3.375q5.75 3.375 9.125 9.125t3.375 12.5q0 6.625 -3.375 12.5 -3.375 5.75 -9.125 9.125t-12.5 3.375Zm10.125 -25 -16.125 -12v24l16.125 -12Z\" fill=\"#fff\"/>\n    </g>\n\n    <text x=\"200\" y=\"200\" fill=\"#fff\" font-size=\"36\" text-anchor=\"middle\" alignment-baseline=\"middle\"> Video</text>\n\n  </svg>",
+      "notaccept": [
+        "texts",
+        "inputs",
+        "layouts"
+      ]
+    },
+    {
+      "type": "media",
+      "tag": "audio",
+      "layout": "audio",
+
+      "html": "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n <g transform=\"translate(170, 110)\">\n    <path d=\"M33.883 3.39v50.824H28.099l-13.553 -13.553h-9.463C2.28 40.661 0 38.381 0 35.579V22.026c0 -2.802 2.28 -5.082 5.082 -5.082h9.463L28.099 3.39h5.784Zm-3.388 3.388h-0.993l-12.56 12.56v18.927l12.56 12.56h0.993V6.778Zm19.665 4.053C54.957 15.633 57.6 22.013 57.6 28.803c0 6.787 -2.643 13.167 -7.441 17.968l-2.396 -2.395c4.161 -4.161 6.448 -9.691 6.448 -15.573 0 -5.885 -2.287 -11.415 -6.448 -15.576Zm-7.173 7.192c2.87 2.911 4.449 6.739 4.449 10.778s-1.579 7.868 -4.449 10.778l-2.416 -2.379c2.243 -2.274 3.476 -5.255 3.476 -8.4 0 -3.144 -1.233 -6.126 -3.476 -8.4Zm-29.433 2.307H5.082c-0.932 0 -1.694 0.759 -1.694 1.694v13.553c0 0.935 0.762 1.694 1.694 1.694h8.471V20.331Z\" fill=\"#fff\"/>\n  </g>\n\n  <text x=\"200\" y=\"200\" fill=\"#fff\" font-size=\"36\" text-anchor=\"middle\" alignment-baseline=\"middle\"> Audio</text>\n\n</svg>",
+      "notaccept": [
+        "texts",
+        "inputs",
+        "layouts"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "button",
+      "html": "<button  style='background: #333' >Button</button>",
+      "text": "button",
+      "type": "inputs",
+      "layout": "button",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes": {
+        "type": {
+          "key": "type",
+          "value": "button"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='text' style='width: 100%; background: #333; margin-bottom: 6px' placeholder='text input'/> Text",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "text"
+        }
+       },
+      "type": "inputs"
+    },
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='number' style='width: 100%;     background: #333; margin-bottom: 6px;'  placeholder='number input'/> Number",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "number"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='date' placeholder='date input' style='width: 100%;  margin-bottom: 6px;   background: #333' /> Date",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "date"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='datetime-local' placeholder='datetime input'  style='width: 100%;   margin-bottom: 6px;  background: #333' /> Datetime",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "datetime-local"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='month' placeholder='month input' style='width: 100%;   margin-bottom: 6px;  background: #333' /> Month",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes": {
+        "type": {
+          "key": "type",
+          "value": "month"
+        }
+      }
+    }, 
+    {
+      "tag": "input",
+      "layout": "input",
+
+      "html": "<input disabled type='time' placeholder='time input'  style='width: 100%;  margin-bottom: 6px;   background: #333' /> Time",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes": {
+        "type": {
+          "key": "type",
+          "value": "time"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "layout": "fileinput",
+
+      "html": "<input disabled type='file' style='width: 100%; margin-bottom: 6px;  background: #333' /> File",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes": {
+        "type": {
+          "key": "type",
+          "value": "file"
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "html": "<input disabled type='checkbox' style='width: 100%;     background: #333' checked/> Checkbox",
+      "type": "inputs",
+      "layout": "inputgroup",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "checkbox"
+        }
+      }
+    },
+    {
+      "tag": "input",
+
+      "html": "<input disabled type='radio' style='width: 100%;     background: #333' checked/> Radio",
+      "type": "inputs",
+      "layout": "inputgroup",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "type": {
+          "key": "type",
+          "value": "radio"
+        }
+      }
+    },
+    {
+      "tag": "textarea",
+      "layout": "input",
+
+      "html": "<textarea value='textarea'  style='width: 100%;     background: #333' disabled> Textarea</textarea>",
+      "type": "inputs",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts",
+        "inputs"
+      ]
+    },
+    {
+      "tag": "select",
+      
+      "html": "<select disabled style='width: 100%;  margin-bottom: 6px;   background: #333'><option value='' >Select Option</option></select> Dropdown",
+      "type": "inputs",
+      "layout": "select",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ]
+    },
+    {
+      "tag": "select",
+      "html": "<select disabled multiple style='width: 100%;  margin-bottom: 6px;   background: #333'><option value='' >Select Multiple Option</option></select> Dropdown",
+      "type": "inputs",
+      "layout": "multiselect",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+       "attributes":  {
+        "multiple": {
+          "key": "multiple",
+          "value": true
+        }
+      }
+    },
+    {
+      "tag": "input",
+      "html": "<input style='background: #333' type='submit' value='Submit'/>",
+      "type": "inputs",
+      "layout": "submit",
+      "notaccept": [
+        "media",
+        "texts",
+        "layouts"
+      ],
+      "attributes":  {
+        "htmlType": {
+          "key": "htmlType",
+          "value": "submit"
+        },
+          "type": {
+            "key": "type",
+          "value": "submit"
+        },
+        
+          "value": {
+          "key": "value",
+          "value": "Submit"
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "tag": "nav",
+      "html": "Menu",
+      "type": "component",
+      "component": "menu",
+      "layout": "menu",
+      "notaccept": [
+        "main",
+        "header",
+        "nav"
+      ]
+    },
+   
+    {
+      "tag": "div",
+      "html": "<svg viewBox=\"0 0 800 300\" width=\"100%\" height=\"100%\">\n   <!--Background color-->\n   <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <rect x=\"5%\" y=\"5%\" width=\"95%\" height=\"95%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n\n  <rect x=\"150\" y=\"50\" width=\"500\" height=\"200\" stroke=\"#fff\" stroke-dasharray=\"5 5\" fill=\"none\" />\n  <text x=\"400\" y=\"170\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Container</text>\n</svg>",
+      "layout": "container",
+      "component": "container",
+      "type": "component",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Flex",
+      "type": "component",
+      "component": "flex",
+      "layout": "flex",
+      "notaccept": [
+        "main",
+        "header",
+        "nav"
+      ]
+    },
+    {
+      "tag": "div",
+      "html": "Grid",
+      "type": "component",
+      "component": "grid",
+      "layout": "grid",
+      "notaccept": [
+        "main",
+        "header",
+        "nav"
+      ]
+    },
+    {
+      "tag": "div",
+      "html": "<svg viewBox=\"0 0 800 400\" width=\"100%\" height=\"100%\">\n  <!-- Background color -->\n  <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"#333\" />\n  \n  <!-- Slider container -->\n  <rect x=\"5%\" y=\"5%\" width=\"90%\" height=\"90%\" fill=\"#555\" stroke=\"#fff\" stroke-dasharray=\"5\" stroke-width=\"2\" rx=\"10\" />\n  \n  <!-- Slider content -->\n  <!-- Title -->\n  <text x=\"400\" y=\"160\" fill=\"#fff\" font-size=\"72\" text-anchor=\"middle\">Slider</text>\n  <text x=\"400\" y=\"250\" fill=\"#ccc\" font-size=\"48\" text-anchor=\"middle\">content</text>\n  \n  \n  <!-- Navigation arrows -->\n  <g transform=\"translate(80, 180)\">\n    <polygon points=\"0,15 15,0 15,30\" fill=\"#ccc\" />\n  </g>\n  <g transform=\"translate(690, 180)\">\n    <polygon points=\"30,15 15,0 15,30\" fill=\"#ccc\" />\n  </g>\n\n  <!-- Navigation dots -->\n  <g transform=\"translate(360, 350)\">\n    <circle cx=\"0\" cy=\"0\" r=\"6\" fill=\"#ccc\" />\n  </g>\n  <g transform=\"translate(380, 350)\">\n    <circle cx=\"20\" cy=\"0\" r=\"6\" fill=\"#ccc\" />\n  </g>\n  <g transform=\"translate(400, 350)\">\n    <circle cx=\"40\" cy=\"0\" r=\"6\" fill=\"#ccc\" />\n  </g>\n</svg>"
+      ,"type": "component",
+      "layout": "slider",
+      "component": "slider",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Tabs"
+      ,"type": "component",
+      "layout": "tabs",
+      "component": "tabs",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Accordion"
+      ,"type": "component",
+      "layout": "accordion",
+      "component": "accordion",
+
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Gallery"
+      ,"type": "component",
+      "layout": "gallery",
+      "component": "gallery",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Modal"
+      ,"type": "component",
+      "layout": "modal",
+      "component": "modal",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Sider"
+      ,"type": "component",
+      "layout": "sider",
+      "component": "sider",
+
+      "notaccept": []
+    },{
+      "tag": "div",
+      "html": "Dropdown"
+      ,"type": "component",
+      "layout": "dropdown",
+      "component": "dropdown",
+      "notaccept": []
+    },
+    {
+      "tag": "button",
+      "html": "GoToTopButton"
+      ,"type": "component",
+      "layout": "gototop",
+      "component": "gototop",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Observable"
+      ,"type": "component",
+      "layout": "observable",
+      "component": "observable",
+      "notaccept": []
+    },
+    {
+      "tag": "div",
+      "html": "Searchable"
+      ,"type": "component",
+      "layout": "searchable",
+      "component": "searchable",
+      "notaccept": []
+    }
+  ]
+}

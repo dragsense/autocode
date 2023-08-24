@@ -1,0 +1,367 @@
+.comming-soon-wrapper {
+  background-color: $purple;
+  background-image: url('../images/comming_soon/bg.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    &:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(2) {
+      left: 0;
+      bottom: 8%;
+    }
+    &:nth-child(3) {
+      right: 40%;
+      bottom: 8%;
+    }
+    &:nth-child(4) {
+      right: 44%;
+      bottom: 17%;
+    }
+    &:nth-child(5) {
+      right: 45%;
+      bottom: 14%;
+    }
+  }
+}
+
+.comming-soon-inner {
+  .logo {
+    margin-bottom: 150px;
+  }
+
+  .page-title {
+    color: $white;
+    font: {
+      size: 70px;
+      weight: 700;
+    }
+    line-height: 77px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+
+  .title-text {
+    color: $white;
+    font: {
+      size: 20px;
+      weight: 500;
+    }
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .form-group {
+    margin-top: 0;
+    margin-bottom: 30px;
+    max-width: 485px;
+    width: 100%;
+  }
+
+  input,
+  .btn {
+    border-color: $white;
+  }
+
+  .social-list {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+        height: 32px;
+        width: 32px;
+        transition: all 0.3s ease-in-out;
+
+        i {
+          font-size: 12px;
+        }
+
+        &:hover {
+          background-color: $red-700;
+          border-color: $red-700;
+        }
+      }
+    }
+  }
+}
+
+// Comming Soon 2 Style
+.comming-soon-2 {
+  background-color: $red-700;
+
+  .page-title,
+  .title-text {
+    color: $black;
+  }
+
+  .social-list {
+    li {
+      a {
+        color: $black;
+        border-color: $black;
+
+        &:hover {
+          background: $black;
+          color: $red-700;
+        }
+      }
+    }
+  }
+}
+
+// Comming Soon 3 Style
+.comming-soon-3 {
+  background-image: none;
+  
+  @include lg {
+    background-image: url('../images/comming_soon/bg2.svg');
+  }
+
+  .shape {
+    &:nth-child(1) {
+      left: 3%;
+      top: 10%;
+    }
+    &:nth-child(2) {
+      background: #ffd4d5;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      left: 10%;
+      top: 10%;
+    }
+    &:nth-child(3) {
+      width: 12px;
+      height: 12px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      left: 2%;
+      bottom: 30%;
+    }
+    &:nth-child(4) {
+      right: auto;
+      left: 7%;
+      bottom: 15%;
+    }
+    &:nth-child(5) {
+      width: 12px;
+      height: 12px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      right: 40%;
+      top: 22%;
+    }
+    &:nth-child(6) {
+      right: 38%;
+      top: 42%;
+    }
+    &:nth-child(7) {
+      width: 16px;
+      height: 16px;
+      border: 1px solid $white;
+      border-radius: 50%;
+      right: 36%;
+      bottom: 37%;
+    }
+    &:nth-child(8) {
+      right: 25%;
+      bottom: 12%;
+    }
+    &:nth-child(9) {
+      right: 29%;
+      bottom: 7%;
+    }
+  }
+}
+
+// Comming Soon 4 Style
+.comming-soon-4 {
+  background-image: linear-gradient(256.17deg, #fff6d6 1.04%, #ffffff 100%);
+
+  .logo {
+    margin-bottom: 85px;
+  }
+
+  .page-title,
+  .title-text {
+    color: $black;
+  }
+
+  .page-title {
+    margin-bottom: 20px;
+  }
+
+  input,
+  .btn {
+    border-color: $black;
+  }
+
+  .social-list {
+    li {
+      a {
+        border-color: $black;
+        color: $black;
+
+        &:hover {
+          color: $white;
+          border-color: $red-700;
+        }
+      }
+    }
+  }
+
+  .right-img {
+    margin-right: -275px;
+  }
+
+  .shape {
+    &:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(2) {
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(3) {
+      right: auto;
+      left: 3%;
+      bottom: 45%;
+    }
+    &:nth-child(4) {
+      right: auto;
+      left: 7%;
+      bottom: 15%;
+    }
+    &:nth-child(5) {
+      right: 47%;
+      top: auto;
+      bottom: 17%;
+    }
+    &:nth-child(6) {
+      right: 38%;
+      top: 42%;
+      animation: star 7s ease-in-out infinite alternate;
+    }
+    &:nth-child(7) {
+      right: 18%;
+      bottom: auto;
+      top: 8%;
+      animation: star2 4s ease-in-out infinite alternate;
+    }
+    &:nth-child(8) {
+      right: 20%;
+      bottom: auto;
+      top: 32%;
+    }
+    &:nth-child(9) {
+      right: 6%;
+      bottom: auto;
+      top: 37%;
+    }
+    &:nth-child(10) {
+      right: 4%;
+      bottom: 22%;
+    }
+    &:nth-child(11) {
+      top: 10%;
+      left: 5%;
+      animation: star 9s both infinite alternate 5s;
+    }
+    &:nth-child(12) {
+      top: 15%;
+      left: 10%;
+      animation: star 9s both infinite alternate 5s;
+    }
+    &:nth-child(13) {
+      top: 15%;
+      left: 30%;
+      animation: star2 4s ease-in-out infinite alternate;
+    }
+  }
+}
+
+.comming-countdown {
+  display: flex;
+  gap: 35px;
+  padding-bottom: 90px;
+
+  .box {
+    color: $black;
+    @include size(100px);
+    border: 3px solid $red-700;
+    font: {
+      family: $poppins;
+      size: 32px;
+      weight: 700;
+    };
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 22.5px;
+
+    span {
+      border: none;
+      display: block;
+      font: {
+        family: $poppins;
+        size: 18px;
+        weight: 500;
+      }
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+}
+
+@keyframes star {
+  0% {
+  transform: scale(0.3);
+  opacity: 0;
+  }
+  50% {
+  transform: scale(0.8);
+  opacity: 1;
+  }
+  75% {
+  transform: scale(1) rotate(45deg);
+  opacity: 1;
+  }
+  100% {
+  transform: scale(1.01) rotate(-5deg);
+  opacity: 1;
+  }
+}
+
+@keyframes star2 {
+  0% {
+  transform: scale(0.3);
+  }
+  50% {
+  transform: scale(0.8);
+  }
+  75% {
+  transform: scale(1);
+  }
+  100% {
+  transform: scale(1.01);
+  }
+  }

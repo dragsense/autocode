@@ -1,0 +1,334 @@
+.components-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .section-title-center {
+    p {
+      color: #4F4F4F;
+      font-size: 20px;
+      line-height: 1.6;
+      padding-top: 18px;
+      width: 100%;
+
+      @include xl {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.single-component-widget {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 45px 25px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  &:hover {
+    box-shadow: 0px 50px 80px 0px #352a431a;
+  }
+  .icon {
+    background-color: rgba(#515dc3, 10%);
+    width: 85px;
+    height: 85px;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    img {
+      margin: auto;
+    }
+  }
+  h4 {
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.5px;
+    color: #515151;
+  }
+  p {
+    color: $txt-para;
+    margin-top: 20px;
+  }
+}
+
+.deal-fast-area {
+  background-color: #E6F5FA;
+  overflow: hidden;
+
+  .section-title-center {
+    padding-bottom: 80px;
+
+    @include lg {
+      padding-bottom: 40px;
+    }
+    
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      padding-top: 15px;
+      width: 100%;
+
+      @include lg {
+        width: 65%;
+      }
+    }
+  }
+  .info-card {
+    border: none;
+    .nav-link {
+      padding: 30px 20px 22px 20px;
+      display: flex;
+      border-radius: 5px;
+      transition: all 0.3s ease-out;
+      position: relative;
+      border: none;
+      &:hover {
+        border: none;
+      }
+      &.active {
+        background-color: #fff;
+        box-shadow: 0px 20px 50px 0px #00000014;
+        .progress-bar {
+          display: block;
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+
+      .info-txt {
+        text-align: left;
+      }
+      .icon {
+        margin-right: 15px;
+      }
+      h6 {
+        font-family: $inter;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 17px;
+        color: $black;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $txt-para;
+        margin-top: 10px;
+      }
+      .progress-bar {
+        visibility: hidden;
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $brand-app;
+        height: 4px;
+        box-shadow: 0px 20px 50px 0px #00000014;
+        transform: scaleX(0);
+        transform-origin: left;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: transform 5s linear;
+      }
+    }
+  }
+  .tab-pane {
+    padding-top: 0;
+
+    &.active {
+      .main-img img {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        &:nth-child(1) {
+          animation-name: fadeInLeft;
+        }
+        &:nth-child(2) {
+          animation-name: fadeInRight;
+          animation-delay: 0.1s;
+        }
+      }
+    }
+  }
+  .main-img {
+    position: relative;
+    display: inline-block;
+    img {
+      &:nth-child(2) {
+        position: absolute;
+        right: -170px;
+        bottom: -27px;
+      }
+    }
+  }
+}
+
+.mobile-app-area {
+  padding: 150px 0;
+  h2 {
+    line-height: 1.24;
+    letter-spacing: 0.5px;
+    width: 100%;
+
+    @include xl {
+      width: 85%;
+    }
+
+  }
+  .content {
+    font-size: 20px;
+    line-height: 1.6;
+    color: $txt-para;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 100%;
+
+    @include sm {
+      width: 65%;
+    }
+    @include lg {
+      width: 75%;
+    }
+  }
+  .app-store-link {
+    color: $white;
+    background-color: #473d8d;
+    padding: 8px 8px;
+    p {
+      color: $white;
+      line-height: 1;
+    }
+
+    &:hover {
+      border-color: #473d8d;
+      background-color: $white;
+      color: #473d8d;
+      p {
+        color: #473d8d;
+      }
+    }
+  }
+}
+
+.app-itegretion-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 40px 0 180px;
+  
+  h2 {
+    line-height: 1.24;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: $txt-para;
+    margin: 20px 0 30px;
+  }
+  .supported {
+    li {
+      display: inline-block;
+      color: $txt-para;
+      margin-right: 35px;
+      &:last-child {
+        margin-right: 0;
+      }
+      i {
+        font-size: 13px;
+        color: #52b4a4;
+        margin-right: 5px;
+      }
+    }
+  }
+  .btn {
+    font-family: $inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    padding: 21px 1.5rem;
+    margin-top: 60px;
+    background-color: $brand-app;
+    border-color: $brand-app;
+    color: #fff;
+    &:hover {
+      color: $brand-app;
+      background-color: transparent;
+    }
+  }
+}
+
+.integreted-app {
+  border-radius: 50%;
+  border: 2px dashed rgba(#c6c6c6, 32%);
+  position: relative;
+  width: 396px;
+  height: 396px;
+  transition: all 0.3s linear;
+  .app {
+    height: 86px;
+    width: 86px;
+    box-shadow: 0px 20px 50px 0px #00000014, 0px 20px 50px 0px #0000000d;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    transition: all 0.3s ease-out;
+    img {
+      margin: auto;
+    }
+    &:nth-child(1) {
+      top: 20%;
+      right: 20%;
+      transform: translateX(75%) translateY(-75%);
+    }
+    &:nth-child(2) {
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+    &:nth-child(3) {
+      bottom: 20%;
+      right: 20%;
+      transform: translateX(75%) translateY(75%);
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+    &:nth-child(5) {
+      bottom: 20%;
+      left: 20%;
+      transform: translateX(-75%) translateY(75%);
+    }
+
+    &:nth-child(6) {
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(7) {
+      top: 20%;
+      left: 20%;
+      transform: translateX(-75%) translateY(-75%);
+    }
+    &:nth-child(8) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.main {
+      height: 110px;
+      width: 110px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.bg-burst {
+  background-color: #252C53;
+}

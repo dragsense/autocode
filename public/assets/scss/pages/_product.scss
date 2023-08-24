@@ -1,0 +1,487 @@
+.product-banner-area {
+  padding-top: 150px;
+  background-color: #f1f9fe;
+  background-image: linear-gradient(180deg, #002c39, #00121e);
+
+  .banner-title {
+    color: $white;
+
+    .text-span {
+      color: $red-700;
+    }
+  }
+}
+
+.product-hero-wrapper {
+  position: relative;
+  padding-bottom: 400px;
+  padding-left: 0;
+
+  @include sm {
+    padding-bottom: 480px;
+    padding-left: 80px;
+  }
+
+  @include lg {
+    padding-left: 100px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-dotted-line {
+  @include sm {
+    @include absolute(left 3% top 0% right auto bottom 0%);
+    border-style: dashed;
+    border-width: 1px;
+    border-color: rgba(236, 89, 90, 0.1);
+
+    &.down {
+      top: 22%;
+    }
+  }
+}
+
+.product-circle {
+  @include lg {
+    left: 1.3%;
+  }
+
+  @include sm {
+    @include absolute(left 0% top auto right auto bottom -3%);
+    @include size(40px);
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0 9px 10px 0 rgba(236, 89, 90, 0.1);
+
+    &.down {
+      bottom: 20%;
+    }
+  }
+}
+
+.product-inside-circle {
+  @include sm {
+    overflow: hidden;
+    @include size(28px);
+    border-radius: 50%;
+    background-color: $red-700;
+  }
+}
+
+.product-box-area {
+  margin-top: -420px;
+  margin-bottom: 80px;
+
+  @include lg {
+    margin-bottom: 100px;
+  }
+}
+
+.product-boxxes-wrapper {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+
+  @include sm {
+    padding-left: 80px;
+  }
+  @include lg {
+    padding-left: 100px;
+  }
+
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.product-box-copy {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  @include lg {
+    flex-direction: row;
+  }
+  overflow: hidden;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 60px;
+  justify-content: space-between;
+  align-items: center;
+  border-style: none;
+  border-width: 2px;
+  border-color: #d8cbb7;
+  border-radius: 12px;
+  background-color: $white;
+
+  &.copy {
+    padding-left: 0;
+
+    @include lg {
+      padding-left: 60px;
+    }
+  }
+
+  &.top {
+    border-style: none;
+    border-radius: 12px;
+    background-color: $white;
+    padding-left: 0;
+    margin-bottom: 80px;
+    margin-top: 100px;
+
+    @include lg {
+      margin-bottom: 100px;
+      padding-left: 60px;
+    }
+  }
+
+  .btn {
+    border: none;
+  }
+
+  .box-title {
+    color: $dianne;
+    font-size: 30px;
+
+    @include lg {
+      font-size: 40px;
+    }
+
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+}
+
+.product-hero-box-pointers {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @include sm {
+    flex-direction: row;
+  }
+
+  ul {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #1d3a46;
+
+    li {
+      display: flex;
+      width: 100%;
+      margin-bottom: 18px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+.product-tab-checkmark {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  margin-right: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.product-tab-pointer-text {
+  width: 90%;
+  color: $dianne;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-hero-box-pointer-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  @include sm {
+    width: 48%;
+  }
+}
+
+.product-features-img {
+  background: $white;
+  @include size(80px);
+  border-radius: 50%;
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-left: -15px;
+  padding-left: 0px;
+}
+
+.product-hero-box-pointer-title {
+  margin-bottom: 12px;
+  color: $dianne;
+}
+
+.product-hero-box-left {
+  width: 80%;
+  max-width: 450px;
+}
+
+.produ {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-left: 0px;
+  border-radius: 12px;
+
+  img {
+    margin-left: auto;
+  }
+
+  @include sm {
+    img {
+      margin-left: 120px;
+    }
+  }
+
+  @include lg {
+    margin: 0;
+
+    img {
+      margin-left: 0;
+    }
+  }
+}
+
+.product-hero-box-2 {
+  overflow: hidden;
+  width: 80%;
+  max-width: 450px;
+  margin-right: 0;
+  margin-bottom: 40px;
+  border-radius: 12px;
+
+  img {
+    width: 100%;
+    max-width: 60%;
+    margin-left: 0px;
+    object-fit: contain;
+  }
+
+  @include sm {
+    img {
+      margin-left: 100px;
+    }
+  }
+
+  @include lg {
+    width: 48%;
+    margin-right: -30px;
+    margin-bottom: 0;
+
+    img {
+      margin-left: 40px;
+    }
+  }
+}
+
+//---------------------
+.product-integrations-wrapper {
+  background-color: #04121f;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 4% 400px 5%;
+  margin-bottom: 80px;
+  border-radius: 12px;
+
+  @include sm {
+    padding: 120px 4% 120px 5%;
+  }
+
+  @include lg {
+    margin-bottom: 100px;
+    padding: 160px 8% 160px 5%;
+  }
+}
+
+.product-integrations-left {
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include sm {
+    width: 60%;
+  }
+
+  .inegrations-title {
+    color: $white;
+    font-size: 30px;
+
+    @include lg {
+      font-size: 40px;
+    }
+
+    line-height: 1.4;
+    max-width: 775px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 85%;
+    margin-bottom: 32px;
+  }
+}
+
+.product-integrations-cards {
+  @include absolute(left 0% right 0% bottom 0%);
+  top: auto;
+  width: 400%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  @include sm {
+    @include absolute(top 0% right 0% bottom 0%);
+    left: auto;
+    width: auto;
+    height: 230%;
+    flex-direction: row;
+  }
+}
+
+.product-integrations-card-line {
+  display: flex;
+  margin-right: 24px;
+  margin-bottom: 30px;
+  flex-direction: row;
+  align-items: center;
+
+  .product-integrations-inside-line {
+    animation: lefttoright 60s infinite alternate linear;
+  }
+
+  &:nth-child(2n) {
+    .product-integrations-inside-line {
+      animation: righttoleft 60s infinite alternate linear;
+    }
+  }
+
+  @include sm {
+    flex-direction: column;
+
+    .product-integrations-inside-line {
+      animation: toptobottom 60s infinite alternate linear;
+    }
+
+    &:nth-child(2n) {
+      .product-integrations-inside-line {
+        animation: bottomtotop 60s infinite alternate linear;
+      }
+    }
+  }
+
+  &.hide-tablet {
+    display: none;
+
+    @include lg {
+      display: flex;
+    }
+  }
+}
+
+.product-integrations-inside-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.product-integrations-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $white;
+  margin-bottom: 0;
+  margin-right: 24px;
+  @include size(120px, 140px);
+
+  @include sm {
+    @include size(90px, 140px);
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  @include lg {
+    @include size(120px, 160px);
+  }
+}
+
+.product-integrations-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(60px);
+}
+
+@keyframes toptobottom {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes bottomtotop {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes lefttoright {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes righttoleft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

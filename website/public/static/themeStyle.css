@@ -1,0 +1,8 @@
+.box-division {
+  background: linear-gradient(274deg, #2cce4c 23, #c63f3f 63);
+  background-color: undefined;
+}
+section {
+  background: radial-gradient(circle, #c35555 22%, #258e7c 26%, #e27474 80%);
+  background-color: #c73737;
+}

@@ -1,0 +1,227 @@
+/*================================================
+CTA CSS
+=================================================*/
+.cta-area {
+  position: relative;
+
+  .section-title-center {
+    .mt-16 {
+      margin-top: rem(32px);
+
+      @include md {
+        margin-top: rem(64px);
+      }
+    }
+  }
+
+  .shape7 {
+    @include absolute(top rem(-25px) left 10%);
+    @include size(rem(50px));
+    background-color: $red-700;
+    border-radius: 50%;
+
+    @include md {
+      @include size(rem(90px));
+    }
+  }
+
+  .shape8 {
+    @include absolute(top rem(-40px) right 5%);
+
+    @include xl {
+      @include absolute(top rem(-40px) right 10%);
+    }
+  }
+
+  .shape9 {
+    @include absolute(top rem(-26px) right 10%);
+    @include size(50px);
+    border: 2px solid $black;
+    background-color: #37bd8a;
+    transform: rotate(45deg);
+  }
+
+  .shape10 {
+    @include absolute(top rem(80px) right 12%);
+  }
+
+  .shape11 {
+    @include absolute(bottom 30% left 15%);
+  }
+
+  .shape12 {
+    @include absolute(bottom rem(-20px) left rem(48px));
+    @include size(40px);
+    z-index: 9;
+    border: 2px solid $black;
+    background-color: #efba34;
+    transform: rotate(45deg);
+
+    @include md {
+      bottom: rem(-38px);
+      @include size(72px);
+    }
+  }
+}
+
+.cta-area-two {
+  @include lg {
+    &.section-padding {
+      padding-top: rem(85px);
+      padding-bottom: rem(85px);
+    }
+  }
+
+  .section-title-center {
+    h2 {
+      font-size: rem(40px);
+    }
+  }
+}
+
+.cta-area-three {
+  .cta-box {
+    border-radius: 10px;
+    bottom: -125px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+
+    .shape {
+      position: absolute;
+      width: 75px;
+      z-index: 1;
+
+      &:nth-child(1) {
+        left: 0;
+        bottom: 0;
+      }
+      &:nth-child(2) {
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .section-title,
+  .title-text {
+    color: $white;
+  }
+
+  .section-title {
+    font-weight: 700;
+  }
+
+  .title-text {
+    opacity: 0.8;
+  }
+
+  .btn {
+    background: $white;
+    border-radius: 5px;
+    border-color: transparent;
+    color: $black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 20px 36px;
+
+    &:hover {
+      background: $red-700;
+      color: $white;
+    }
+  }
+}
+
+.cta-area-four {
+  background-color: #e6f5fa;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  .shape {
+    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+    &:nth-child(1) {
+      @include size(40px, 90px);
+      border: 4px solid #f9a619;
+      transform: rotate(320deg);
+      left: 14%;
+      top: 32%;
+    }
+
+    &:nth-child(2) {
+      @include size(41px);
+      border: 4px solid #473d8d;
+      border-radius: 50%;
+      left: 18%;
+      top: 25%;
+    }
+    &:nth-child(3) {
+      @include size(21px);
+      border: 4px solid #28192d;
+      transform: rotate(45deg);
+      left: 12%;
+      top: 60%;
+    }
+    &:nth-child(4) {
+      @include size(61px);
+      border: 4px solid #ec595a;
+      border-radius: 10px;
+      transform: rotate(15deg);
+      left: 21%;
+      top: 45%;
+    }
+    &:nth-child(5) {
+      @include size(23px);
+      border: 4px solid #28192D;
+      border-radius: 50%;
+      right: 8%;
+      top: 22%;
+    }
+    &:nth-child(6) {
+      @include size(35px, 70px);
+      border: 4px solid #473D8D;
+      transform: rotate(45deg);
+      right: 10%;
+      bottom: 30%;
+    }
+    &:nth-child(7) {
+      @include size(64px);
+      border: 4px solid #F9A619;
+      border-radius: 10px;
+      transform: rotate(15deg);
+      right: 15%;
+      top: 30%;
+    }
+    &:nth-child(8) {
+      @include size(70px);
+      border: 4px solid #EC595A;
+      border-radius: 50%;
+      right: 22%;
+      bottom: 30%;
+    }
+  }
+
+  .btn {
+    background-color: #473d8d;
+    &:hover {
+      background-color: $black;
+      color: #473d8d;
+    }
+  }
+
+  .section-title-center {
+    padding-bottom: 40px;
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      padding-top: 15px;
+      width: 100%;
+
+      @include lg {
+        width: 45%;
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+    "6431333dc5c6c0227b880c62" : {
+        "_id": "6431333dc5c6c0227b880c62",
+        "elements": {
+            "0": {
+                "form": null,
+                "collection": null,
+                "component": null,
+                "_uid": "0",
+                "tagName": "div",
+                "type": "layout",
+                "layout": "body",
+                "nodeValue": "",
+                "className": "ac-class-0",
+                "classes": [
+                    {
+                        "name": "class-test"
+                    }
+                ],
+                "childNodes": [
+                    "00a9964f-098a-4fd3-8f66-f7f1576e8cab",
+                    "91f80e66-0d43-4c42-8749-f0286b9d296c",
+                    "6a250432-c6cf-4dff-bed10fsdsdsd0"
+                ]
+            },
+            "00a9964f-098a-4fd3-8f66-f7f1576e8cab": {
+                "_uid": "00a9964f-098a-4fd3-8f66-f7f1576e8cab",
+                "tagName": "header",
+                "type": "layouts",
+                "layout": "header",
+                "nodeValue": "header",
+                "childNodes": [],
+                "className": "ac-class-1LXHjwV0",
+                "parent": "0"
+            },
+            "91f80e66-0d43-4c42-8749-f0286b9d296c": {
+                "form": null,
+                "collection": null,
+                "component": null,
+                "_uid": "91f80e66-0d43-4c42-8749-f0286b9d296c",
+                "tagName": "header",
+                "type": "layouts",
+                "layout": "header",
+                "nodeValue": "header",
+                "childNodes": [],
+                "className": "ac-class-T6ROee_w",
+                "parent": "0"
+            },
+           "6a250432-c6cf-4dff-bed10fsdsdsd0" : {
+                "_uid": "6a250432-c6cf-4dff-bed10fsdsdsd0",
+                "tagName": "div",
+                "nodeValue": "This is Component",
+                "component": {
+                    "_id": "640b3841c7e1e83f86d0d095"
+                    
+                },
+                "childNodes": [
+                    "65124955-1c84-49ae-b1e4-def75265a4b4"
+                ]
+            },
+            "65124955-1c84-49ae-b1e4-def75265a4b4" :{
+                "_uid": "65124955-1c84-49ae-b1e4-def75265a4b4",
+                "tagName": "h2",
+                "nodeValue": "satte value",
+              
+                "state": {
+                    "key": [
+                        "name"
+                    ],
+                    "type": "STATES"
+                }
+               
+            }
+        },
+        "styles": {
+            "normal": {
+                "div" : {
+                    "elementType": "div",
+                    "selectors": [
+                        {
+                            "style": {
+                                "color": "rgb(212, 56, 56)"
+                            },
+                            "className": "ac-class-0",
+                            "selectorText": ".ac-class-0"
+                        }
+                    ]
+                },
+                "header": {
+                    "elementType": "header",
+                    "selectors": [
+                        {
+                            "style": {
+                                "color": "rgb(206, 136, 136)"
+                            },
+                            "className": "ac-class-1LXHjwV0",
+                            "selectorText": ".ac-class-1LXHjwV0"
+                        },
+                        {
+                            "style": {
+                                "color": "rgb(224, 202, 202)"
+                            },
+                            "className": "ac-class-T6ROee_w",
+                            "selectorText": ".ac-class-T6ROee_w"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "webtitle": "Autocode Website",
+    "lang": "en",
+    "author": "Rana Awais",
+    "keywords": "Easy, Effortless, Rapid",
+    "tagLine": "Master the Art of Web Design with autocode!",
+    "_id": "64626df13059806ef409194c",
+    "desc": "Create stunning websites with autocode Pro, the advanced no-code builder that combines simplicity with limitless customization options.",
+    "searchPage": {
+        "_id": "64ab03e9a1b8958eb06aaf27",
+        "name": "Search Page"
+    },
+    "homePage": {
+        "_id": "649e9b60531ef49fcb54f9e0",
+        "name": "Home Page"
+    },
+    "email": {
+        "host": "localhost",
+        "port": "1025",
+        "ignoreTLS": true,
+        "secure": false,
+        "auth": {
+            "user": "admin",
+            "pass": "fb6whNW1E^82sv$!kj"
+        },
+        "subject": "Message from autocode",
+        "from": "info@autocode.com",
+        "to": "info@autocode.com",
+        "cc": "info@autocode.com",
+        "bcc": "info@autocode.com"
+    },
+    "errorPage": {
+        "_id": "64ab030ea1b8958eb06aaf24",
+        "name": "404"
+    },
+    "images": {
+        "favicon": {
+            "_id": "649e984e531ef49fcb54f9dd",
+            "src": "http://localhost:3001/uploads/images/file-1688115278277.png",
+            "alt": "file-1688115278277.png",
+            "mimetype": "image/png",
+            "name": "file-1688115278277.png"
+        },
+        "logo": {},
+        "mobileLogo": {},
+        "placeholder": {}
+    },
+    "scripts": {
+        "head": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\" integrity=\"sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\n",
+        "footer": ""
+    }
+}

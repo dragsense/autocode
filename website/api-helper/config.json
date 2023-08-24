@@ -1,0 +1,10 @@
+{
+  "URL": "http://localhost:3001",
+  "MONGODB_URI": "mongodb://127.0.0.1:27017/website_db",
+  "AUTH_SECRET": "",
+  "JWT_SECRET": "",
+  "FACEBOOK_ID": "",
+  "FACEBOOK_SECRET": "",
+  "GOOGLE_ID": "",
+  "GOOGLE_SECRET": ""
+}

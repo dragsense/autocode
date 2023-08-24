@@ -1,0 +1,280 @@
+/*================================================
+FAQs CSS
+=================================================*/
+.faq-area {
+  padding-top: rem(70px);
+  padding-bottom: rem(70px);
+
+  @include lg {
+    padding-top: rem(140px);
+    padding-bottom: rem(140px);
+
+    &.pricing-faq {
+      padding-top: rem(70px);
+      padding-bottom: rem(140px);
+    }
+
+    &.help-center-faq {
+      padding-top: rem(130px);
+    }
+  }
+
+  .section-title-center {
+    padding-bottom: rem(45px);
+
+    @include lg {
+      padding-bottom: rem(65px);
+    }
+  }
+
+  .accordion-item {
+    .accordion-button {
+      border-radius: 10px;
+    }
+  }
+}
+.faq-area-two {
+  padding: 130px 0 15px 0;
+  position: relative;
+  z-index: 1;
+
+  .shape {
+    position: absolute;
+    z-index: -1;
+
+    &:nth-child(1) {
+      left: 0;
+      bottom: 20%;
+    }
+    &:nth-child(2) {
+      right: 0;
+      top: 15%;
+    }
+  }
+
+  .section-title-center {
+    padding-bottom: rem(40px);
+
+    p {
+      font-size: 20px;
+      line-height: 32px;
+      width: 100%;
+    }
+  }
+}
+
+.faq-area-three {
+  position: relative;
+  z-index: 1;
+
+  .faq-tab-wrapper .tab-pane {
+    padding-top: 0;
+  }
+  .faq-tab-wrapper .nav-tabs {
+    margin: 0 0 65px;
+    border: none;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-item {
+    margin: 10px 0 0;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-link {
+    border: none;
+    line-height: 32px;
+    border-radius: 3px;
+    padding: 0 18px;
+    color: #989898;
+    font-size: 17px;
+    margin: 0 10px;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(1) .nav-link {
+    background: #f4f3ff;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(2) .nav-link {
+    background: #ffeeee;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(3) .nav-link {
+    background: #f3ffed;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(4) .nav-link {
+    background: #edf3ff;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(5) .nav-link {
+    background: #fdf9e9;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(6) .nav-link {
+    background: #e6fafd;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-item.show .nav-link,
+  .faq-tab-wrapper .nav-tabs .nav-link.active {
+    background: #22d4ab !important;
+    color: #fff;
+  }
+
+  .section-title-center {
+    p {
+      color: #4f4f4f;
+      font-size: 20px;
+      line-height: 1.6;
+      width: 100%;
+      padding-top: 15px;
+
+      @include lg {
+        width: 58%;
+      }
+    }
+    padding-bottom: 60px;
+  }
+}
+
+/*================================================
+FAQs page CSS
+=================================================*/
+.faq-banner {
+  .banner-text {
+    color: #4e4e4e;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include sm {
+      width: 80%;
+    }
+    @include lg {
+      font-size: 22px;
+      width: 100%;
+    }
+  }
+}
+
+.faq-nav-wrapp {
+  background: $white;
+  box-shadow: 0px 30px 50px 0px rgba(215, 215, 215, 0.3);
+  border-radius: 5px;
+
+  &.nav {
+    .nav-link {
+      color: $black;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      padding: 21px 40px;
+
+      &.active {
+        background: #f0f0f0;
+      }
+    }
+  }
+}
+
+.faq-tab-content {
+  .tab-pane {
+    padding-top: 0;
+  }
+
+  .accordion-item {
+    margin-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .accordion-button {
+      background: #f0f0f0;
+      border-radius: 5px;
+      box-shadow: none;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 0.5px;
+      padding: 24px 20px 24px 34px;
+
+      &:not(.collapsed) {
+        &:after {
+          content: '\f00d';
+        }
+      }
+    }
+
+    .accordion-body {
+      color: $txt-para;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 30px 25px 30px 34px;
+    }
+
+    .collapse {
+      &.show {
+        .accordion-body {
+          box-shadow: 0px 20px 25px 0px rgba(120, 120, 120, 0.2);
+          background: $white;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.question-area {
+  .question_menu {
+    h3 {
+      // color: $h_title;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .nav-tabs {
+      border: none;
+      margin-right: -15px;
+      margin-bottom: -15px;
+      li {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        a {
+          border: none;
+          background: rgba(236, 89, 90, 0.1);
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 40px;
+          border-radius: 3px;
+          padding: 0 16px;
+          color: #6b707f;
+          // @include transition;
+          &:hover,
+          &.active {
+            background: $red-700;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .question_list {
+    .tab-pane {
+      padding-top: 0;
+    }
+    .fade {
+      transition: opacity 0.5s linear;
+    }
+    .ques_item {
+      background: rgba(236, 89, 90, 0.1);
+      padding: 35px 25px 35px 35px;
+      h4 {
+        // color: $h_title;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 13px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+      &:nth-child(even) {
+        background: #fff;
+      }
+    }
+  }
+}

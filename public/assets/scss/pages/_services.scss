@@ -1,0 +1,247 @@
+.services-banner {
+  background-image: linear-gradient(91.28deg, #ffffff 2.19%, #fff6d6 97.81%);
+  padding: 290px 0 195px;
+
+  .banner-title {
+    font-size: 65px;
+    line-height: 62px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.services-wrapp-area {
+  .section-title {
+    span {
+      color: $red-700;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0 auto 90px;
+      width: 60%;
+    }
+  }
+
+  .items-wrapp {
+    .row {
+        margin-bottom: 80px;
+
+        @include lg {
+            margin-bottom: 120px;
+        }
+        @include xl {
+            margin: 0 35px 140px;
+        }
+
+        &:nth-child(1n) {
+        .services-content {
+            @include xl {
+                margin-left: 120px;
+                margin-right: 0;
+            }
+            .item-btn {
+            background-color: #ac73c7;
+            }
+        }
+        }
+        &:nth-child(2n) {
+        .services-content {
+            @include xl {
+                margin-right: 100px;
+                margin-left: 0;
+            }
+            .item-btn {
+            background-color: #73c7bd;
+            }
+        }
+        }
+        &:nth-child(3n) {
+        .services-content {
+            .item-btn {
+            background-color: #89c773;
+            }
+        }
+        }
+        &:nth-child(4n) {
+        .services-content {
+            .item-btn {
+            background-color: #737cc7;
+            }
+        }
+        }
+    }
+  }
+
+}
+
+.services-img {
+  border-radius: 6px;
+  img {
+    border-radius: 6px;
+  }
+}
+
+.services-content {
+  .item-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 2px;
+    color: #fff;
+    font-family: $poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 40px;
+  }
+  .item-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+  .item-text {
+    color: $txt-para;
+  }
+}
+
+.our-clients-area {
+  background: rgba(222, 222, 222, 0.1);
+  .section-title {
+    .red {
+      color: $red-700;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 64px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #4f4f4f;
+    }
+  }
+
+  .client-img {
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+}
+
+.service-testimonial-area {
+  background-image: none;
+  padding: 130px 0 140px;
+
+  .shapes {
+    display: none;
+
+    @include xl {
+      @include absolute(left 2% bottom 15%);
+    }
+  }
+
+  .section-title {
+    h2 {
+      font-size: 50px;
+      line-height: 62px;
+      letter-spacing: 0.5px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 32px;
+      width: 62%;
+      margin: 0 auto 80px;
+    }
+  }
+
+  .slider-navigation {
+    justify-content: center;
+  }
+
+  .testimonial-content {
+      p {
+          color: #4F4F4F;
+          font-weight: 600;
+          margin-bottom: 25px;
+      }
+
+      .author-info {
+          font-weight: 500;
+          color: #4F4F4F;
+
+          span {
+              display: inline;
+              font-weight: 400;
+          }
+      }
+  }
+}
+
+.services-cta-area {
+  position: relative;
+  z-index: 1;
+  background-color: $red-700;
+  .shape {
+    position: absolute;
+    z-index: -1;
+    &:nth-child(1) {
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(2) {
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(3) {
+      right: 0;
+      top: 0;
+    }
+    &:nth-child(4) {
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .cta-title {
+    color: $white;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  .cta-text {
+    font-size: 32px;
+    line-height: 36px;
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 50px;
+  }
+  .btn {
+    background-color: $white;
+    color: $black;
+    border-color: $white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    padding: 25px 56px;
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+      color: $white;
+    }
+  }
+}

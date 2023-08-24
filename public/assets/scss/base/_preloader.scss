@@ -1,0 +1,91 @@
+/*================ preloader css ====================*/
+#preloader {
+    background: #fff;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .loading {
+        display: flex;
+    }
+    .ctn-preloader{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .spinner{
+        animation: spinner 3s infinite linear;
+        border-radius: 50%;
+        border: 3px solid #f1f6f8;
+        border-left-color: $red-700;
+        border-top-color: $red-700;
+        margin: 0 auto 0em auto;
+        @include absolute(left -40px right -40px bottom -40px top -40px);
+        &:before{
+            content: "";
+            @include size(20px);
+            border: 6px solid #fff;
+            box-shadow: 0 0 20px 0 rgba(4, 46, 56, 0.2);
+            background: $red-700;
+            @include absolute(right 31px top 41px);
+            border-radius: 50%;
+            @media (max-width: 576px){
+                top: 18px;
+            }
+        }
+    }
+    .round_spinner{
+        border-width: 1px;
+        border-color: rgb(238, 243, 244);
+        border-style: solid;
+        border-radius: 50%;
+        background-color: rgb(253, 253, 253);
+        box-shadow: 0 0 100px 0 rgba(4, 46, 56, 0.14);
+        @include size(248px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 40px auto 80px;
+        @media (max-width: 576px){
+            @include size(155px);
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 0;
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+}
+#preloader .head {
+    display: block;
+    font-size: 26px;
+    letter-spacing: 5.2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5% 0 1% 0;
+    padding: 0;
+}
+#preloader p{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

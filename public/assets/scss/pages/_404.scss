@@ -1,0 +1,70 @@
+.wrapper-404 {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .shape {
+        position: absolute;
+        z-index: -1;
+
+        &:nth-child(1) {
+            animation: rotated 30s alternate infinite linear;
+            left: 20%;
+            top: 15%;
+        }
+        &:nth-child(2) {
+            animation: rotated 30s alternate infinite linear;
+            left: 15%;
+            top: 40%;
+        }
+        &:nth-child(3) {
+            left: 22%;
+            bottom: 30%;
+        }
+        &:nth-child(4) {
+            left: 5%;
+            bottom: 45%;
+        }
+        &:nth-child(5) {
+            right: 14%;
+            bottom: 8%;
+        }
+        &:nth-child(6) {
+            animation: rotated 30s alternate infinite linear;
+            right: 12%;
+            top: 15%;
+        }
+        &:nth-child(7) {
+            right: 15%;
+            bottom: 15%;
+        }
+        &:nth-child(8) {
+            right: 10%;
+            top: 20%;
+        }
+    }
+}
+
+.wrapp-404 {
+    .btn {
+        border: none;
+        font: {
+            family: $poppins;
+            size: 22px;
+            weight: 600;
+        }
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding: 15px 52px;
+    }
+}
+
+.text-404 {
+    font: {
+        family: $poppins;
+        size: 22px;
+        weight: 500;
+    }
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
