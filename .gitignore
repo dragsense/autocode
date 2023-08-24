@@ -26,6 +26,8 @@
 /.next/
 /out/
 
+/.space/
+
 # production
 /build
 
